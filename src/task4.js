@@ -18,7 +18,20 @@ function display() {
   arr.push(data3);
   arr.push(data4);
 
-  let js = JSON.stringify(arr);
+  var js = JSON.stringify(arr);
+  var obj = JSON.parse(js);
 
-  document.getElementById("output").innerHTML = js;
+  var table = "<table><tr><th>ID</th><th>Name</th><th>Salary</th>";
+  obj.forEach((element) => {
+    table +=
+      "<tr><td>" +
+      element.id +
+      "</td><td>" +
+      element.name +
+      "</td><td>" +
+      element.salary +
+      "</td></tr>";
+  });
+  table += "</table>";
+  document.getElementById("output").innerHTML = table;
 }
