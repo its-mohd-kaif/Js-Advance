@@ -26,9 +26,9 @@ function display() {
       "</td><td>" +
       element.Salary +
       "</td><td>" +
-      "<button onclick=delFun('" +
+      "<a href='#' onclick=delFun('" +
       element.ID +
-      "')>Delete</button>" +
+      "')>Delete</a>" +
       "</td><tr>";
   });
   table += "</table>";

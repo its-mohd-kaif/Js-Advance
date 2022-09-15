@@ -21,8 +21,6 @@ function display() {
   var js = JSON.stringify(arr);
   var obj = JSON.parse(js);
 
- 
-
   var table = "<table><tr><th>ID</th><th>Name</th><th>Salary</th></tr>";
   obj.forEach((element) => {
     table +=
